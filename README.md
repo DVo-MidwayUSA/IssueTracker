@@ -20,6 +20,15 @@ Internal web application used to triage issues into next actions as presented to
 - Server: Express.js
   - Documentation: [https://expressjs.com/en/4x/api.html](https://expressjs.com/en/4x/api.html)
   - _Why?_ Simple APIs, Isomorphic coding for Client and Server
+- Pipeline:
+  - Build: Webpack, Babel
+    - Documentation: [https://webpack.js.org/api/](https://webpack.js.org/api/)
+    - _Why?_ Works well for both React and Express, allows use for ES6, hot module replacement for faster development, dev server
+  - Build Tools: Nodemon, npm-run-all
+    - _Why?_ Run development build tools for api and website from one cmd interface
+  - Packaging: GitLab
+    - _Why?_ Experimentaion with small projects
+  - Deployment: Octopus Deploy
 - Data: SQLServer
   - Development Location: devsql.SQuaT.website
   - _Why?_ Easy to store, uses JSON storage

@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npm-run-all -p start:*",
+    "start:web": "webpack-dev-server --mode development --open",
+    "dev": "webpack --mode development --module-bind js=babel-loader",
+    "build": "webpack --mode production --module-bind js=babel-loader",
+    "start:api": "nodemon --exec babel-node ./src/api/index.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +19,30 @@
   "bugs": {
     "url": "https://github.com/DVo-MidwayUSA/IssueTriage/issues"
   },
-  "homepage": "https://github.com/DVo-MidwayUSA/IssueTriage#readme"
+  "homepage": "https://github.com/DVo-MidwayUSA/IssueTriage#readme",
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "bulma": "^0.7.5",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "nodemon": "^1.19.3",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  }
 }
