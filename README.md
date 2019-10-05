@@ -13,17 +13,18 @@ Internal web application used to triage issues into next actions as presented to
 
 - CSS Layout: Bulma.io
   - Documentation [https://bulma.io/documentation/](https://bulma.io/documentation/)
-  - Why? 100% CSS, responsive
+  - _Why?_ 100% CSS, responsive
 - Client: React.js
   - Documentaiton [https://reactjs.org/docs/getting-started.html](https://reactjs.org/docs/getting-started.html)
-  - Why? Simple client state management, plan to modify DOM with design
+  - _Why?_ Simple client state management, plan to modify DOM with design
 - Server: Express.js
   - Documentation: [https://expressjs.com/en/4x/api.html](https://expressjs.com/en/4x/api.html)
-  - Why? Simple APIs, Isomorphic coding for Client and Server
+  - _Why?_ Simple APIs, Isomorphic coding for Client and Server
 - Data: SQLServer
   - Development Location: devsql.SQuaT.website
-  - Why? Easy to store, uses JSON storage
+  - _Why?_ Easy to store, uses JSON storage
 - Delivery: On-Premise, Internal users
+  - _Why?_ Starting with on-site reporting, may extend to external site in the future
 
 ## Application User Flow
 
@@ -36,5 +37,22 @@ Internal web application used to triage issues into next actions as presented to
 
 ### Secondary Actions
 
+- Search for an issue
 - Calculate and communicate cost of an issue
 - Conveniently generate work items for other systems
+
+### Navigation Plan
+
+#### Key Navigation Areas
+
+- Triage an issue
+- View issues
+- View Reporting
+
+#### Key Screens
+
+- Issue Triage
+- Issue Inventory
+  - Issue Details
+- Available Reports
+  - Report Details
